@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">Spotify</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Your Library</a></li>
+            </ul>
+            <div class="create-playlist">
+                <h4>Create your first playlist</h4>
+                <p>It’s easy, we’ll help you</p>
+                <button>Create playlist</button>
+            </div>
+            <div class="legal-links">
+                <a href="#">Legal</a>
+                <a href="#">Safety & Privacy Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies</a>
+                <a href="#">About Ads</a>
+                <a href="#">Accessibility</a>
+            </div>
+            <div class="language-selector">
+                <button>English</button>
+            </div>
+            <div class="floating-buttons">
+                <button onclick="promptAddArtist()">Add Artist</button>
+                <button onclick="promptAddAlbum()">Add Album</button>
+            </div>
+
+        </nav>
+        <div class="main-content">
+            <header>
+                <div class="nav-buttons">
+                    <button>&lt;</button>
+                    <button>&gt;</button>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for artists or albums...">
+                    <button onclick="search()">Search</button>
+                </div>
+
+                <div class="auth-buttons">
+                    <button>Sign up</button>
+                    <button>Log in</button>
+                </div>
+            </header>
+            <div class="content">
+                <h1>Popular artists</h1>
+                <div class="artists">
+                    <div class="artist">
+                        <img src="images/pritam.jpg" alt="Pritam">
+                        <p>Pritam</p>
+                    </div>
+                    <div class="artist">
+                        <img src="images/arijit.jpg" alt="Arijit Singh">
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="artist">
+                        <img src="images/ar_rahman.jpg" alt="A.R. Rahman">
+                        <p>A.R. Rahman</p>
+                    </div>
+                    <div class="artist">
+                        <img src="images/sachin_jigar.jpg" alt="Sachin-Jigar">
+                        <p>Sachin-Jigar</p>
+                    </div>
+                    <div class="artist">
+                        <img src="images/anirudh.jpg" alt="Anirudh">
+                        <p>Anirudh</p>
+                    </div>
+                    <div class="artist">
+                        <img src="images/vishal_mishra.jpg" alt="Vishal Mishra">
+                        <p>Vishal Mishra</p>
+                    </div>
+                    <div class="artist">
+                        <img src="images/atif_aslam.jpg" alt="Atif Aslam">
+                        <p>Atif Aslam</p>
+                    </div>
+                </div>
+                <h1>Popular albums</h1>
+                <div class="albums">
+                    <div class="album">
+                        <img src="images/album1.jpg" alt="Album 1">
+                        <p>Album 1</p>
+                    </div>
+                    <div class="album">
+                        <img src="images/album2.jpg" alt="Album 2">
+                        <p>Album 2</p>
+                    </div>
+                    <div class="album">
+                        <img src="images/album3.jpg" alt="Album 3">
+                        <p>Album 3</p>
+                    </div>
+                    <div class="album">
+                        <img src="images/album4.jpg" alt="Album 4">
+                        <p>Album 4</p>
+                    </div>
+                    <div class="album">
+                        <img src="images/album5.jpg" alt="Album 5">
+                        <p>Album 5</p>
+                    </div>
+                    <div class="album">
+                        <img src="images/album6.jpg" alt="Album 6">
+                        <p>Album 6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

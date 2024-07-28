@@ -1,0 +1,219 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Circular', sans-serif;
+    color: #fff;
+    background-color: #121212;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #040404;
+    color: white;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 15px 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a:hover {
+    color: #1db954;
+}
+
+.create-playlist {
+    background-color: #181818;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.create-playlist h4 {
+    margin: 0 0 10px 0;
+}
+
+.create-playlist button {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.legal-links {
+    margin-top: 20px;
+}
+
+.legal-links a {
+    display: block;
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.legal-links a:hover {
+    color: white;
+}
+
+.language-selector {
+    margin-top: 20px;
+}
+
+.language-selector button {
+    background-color: transparent;
+    color: #b3b3b3;
+    border: 1px solid #b3b3b3;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #181818;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #121212;
+    border-bottom: 1px solid #282828;
+}
+
+.nav-buttons button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.auth-buttons button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.auth-buttons button:hover {
+    background-color: white;
+    color: black;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.artists, .albums {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px;
+}
+
+.artist, .album {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    flex: 1 1 150px; /* Allow items to grow and shrink */
+    min-width: 150px; /* Ensure a minimum width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.artist:hover, .album:hover {
+    background-color: #333;
+}
+
+.artist img, .album img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Floating Buttons */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.floating-buttons button {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.floating-buttons button:hover {
+    background-color: #1ed760;
+}
+
+/* Remove Button */
+.remove-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+}
